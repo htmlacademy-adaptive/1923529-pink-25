@@ -10,11 +10,11 @@
 
     <!-- Header -->
     <header class="main-header">
-      <div class="main-header__container">
+      <div class="container">
         <a
           ><img
             class="main-header__logo"
-            src="img/pink.svg"
+            src="img/index/pink.svg"
             width="74"
             height="23"
             alt="Логотип PINK."
@@ -32,7 +32,7 @@
               <li class="navigation__item">
                 <a href="catalog.html">Фотографии</a>
               </li>
-              <li class="navigation__item"><a href="#">Конкурс</a></li>
+              <li class="navigation__item"><a href="form.html">Конкурс</a></li>
               <li class="navigation__item">
                 <a href="https://htmlacademy.ru/">HTML Academy</a>
               </li>
@@ -44,22 +44,33 @@
     <!-- Header -->
 
     <!-- Main -->
-    <main class="main-container">
+    <main class="main">
       <!-- Intro -->
+<<<<<<< HEAD
       <section class="intro common">
         <div class="intro-container">
+=======
+      <section class="intro">
+        <div class="container">
+>>>>>>> master
           <h2 class="visually-hidden">Вступление.</h2>
           <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
-          <button class="intro__download button">Скачать приложение</button>
+          <a href="" class="intro__download button">Скачать приложение</a>
           <ul class="intro__list">
             <li class="intro__item">
-              <span class="visually-hidden">Платформа Android.</span>
+              <a class="intro__android" href=""
+                ><span class="visually-hidden">Скачать на Android.</span></a
+              >
             </li>
             <li class="intro__item">
-              <span class="visually-hidden">Платформа Windows.</span>
+              <a class="intro__windows" href=""
+                ><span class="visually-hidden">Скачать на Windows.</span></a
+              >
             </li>
             <li class="intro__item">
-              <span class="visually-hidden">Платформа IOS.</span>
+              <a class="intro__ios" href=""
+                ><span class="visually-hidden">Скачать на IOS.</span></a
+              >
             </li>
           </ul>
           <p class="intro__description">
@@ -71,12 +82,19 @@
 
       <!-- Information -->
       <section class="information">
-        <div class="information__container">
+        <div class="container">
           <h2 class="visually-hidden">Информация.</h2>
           <p class="information__slogan">Устали от серости мегаполиса?</p>
           <p class="information__slogan">Нам есть, что вам предложить!</p>
           <ul class="information__list">
             <li class="information__item">
+              <img
+                class="information__phone"
+                src="/source/img/index/phone-1.jpg"
+                width="186"
+                height="382"
+                alt="Скриншот."
+              />
               <h3 class="information__title">Поднимает настроение</h3>
               <p class="information__description">
                 Приложение позволит вам победить осеннюю хандру и депрессию
@@ -84,6 +102,13 @@
               </p>
             </li>
             <li class="information__item">
+              <img
+                class="information__phone"
+                src="/source/img/index/phone-2.jpg"
+                width="186"
+                height="382"
+                alt="Скриншот с фильтром."
+              />
               <h3 class="information__title">Меняет мир вокруг</h3>
               <p class="information__description">
                 Сделайте снимок и украсьте его смайликом или текстовой подписью,
@@ -91,6 +116,13 @@
               </p>
             </li>
             <li class="information__item">
+              <img
+                class="information__phone"
+                src="/source/img/index/phone-3.jpg"
+                width="186"
+                height="382"
+                alt="Скриншот с смайликом."
+              />
               <h3 class="information__title">Заводит новых друзей</h3>
               <p class="information__description">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
@@ -98,17 +130,43 @@
               </p>
             </li>
           </ul>
+          <img
+            class="information__mobile-phone"
+            src="img/index/mobile-phone.jpg"
+            width="157"
+            height="320"
+            alt="Телефон."
+          />
         </div>
       </section>
       <!-- Information -->
 
       <!-- Reviews -->
       <section class="reviews">
-        <div class="reviews__container slider">
+        <div class="container slider">
           <h2 class="visually-hidden">Отзывы.</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <h3 class="reviews__author">Николай Петров</h3>
+              <span class="reviews__info">25 лет, водитель трамвая</span>
+              <blockquote class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <span class="reviews__info">25 лет, водитель трамвая</span>
+              <blockquote class="reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому
+                взглянуть на привычные серые вещи! А еще я познакомился со своей
+                будущей женой в комментариях к выложенной фотографии!»
+              </blockquote>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <span class="reviews__info">25 лет, водитель трамвая</span>
               <blockquote class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей
@@ -132,41 +190,62 @@
 
       <!-- Price  -->
       <section class="price">
-        <div class="price__container slider">
+        <div class="container slider">
           <h2 class="visually-hidden">Тарифы.</h2>
           <ul class="price__list slider__list">
             <li class="price__item slider__item card">
-              <ul class="card__list">
-                <li class="card__item">
-                  <h3 class="card__title">База</h3>
-                  <span class="card__price">1,99 USD</span>
-                </li>
-                <li class="card__item card__item--check">Розовый фильтр</li>
-                <li class="card__item card__item--no-check">Смайлики</li>
-                <li class="card__item card__item--no-check">Комментарии</li>
-              </ul>
+              <table class="card__list">
+                <tr class="card__item">
+                  <th class="card__title">
+                    База<span class="card__price">1,99 USD</span>
+                  </th>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Розовый фильтр</td>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Смайлики</td>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Комментарии</td>
+                </tr>
+              </table>
             </li>
             <li class="price__item slider__item card">
-              <ul class="card__list">
-                <li class="card__item card__item--hit">
-                  <h3 class="card__title">Стандарт</h3>
-                  <span class="card__price">3,99 USD</span>
-                </li>
-                <li class="card__item card__item--check">Розовый фильтр</li>
-                <li class="card__item card__item--check">Смайлики</li>
-                <li class="card__item card__item--no-check">Комментарии</li>
-              </ul>
+              <table class="card__list">
+                <tr class="card__item">
+                  <th class="card__title">
+                    Стандарт<span class="card__price">3,99 USD</span>
+                  </th>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Розовый фильтр</td>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Смайлики</td>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Комментарии</td>
+                </tr>
+              </table>
             </li>
             <li class="price__item slider__item card">
-              <ul class="card__list">
-                <li class="card__item">
-                  <h3 class="card__title">Анлим</h3>
-                  <span class="card__price">9,99 USD</span>
-                </li>
-                <li class="card__item card__item--check">Розовый фильтр</li>
-                <li class="card__item card__item--check">Смайлики</li>
-                <li class="card__item card__item--check">Комментарии</li>
-              </ul>
+              <table class="card__list">
+                <tr class="card__item">
+                  <th class="card__title">
+                    Анлим<span class="card__price">9,99 USD</span>
+                  </th>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Розовый фильтр</td>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Смайлики</td>
+                </tr>
+                <tr class="card__item card__item--check">
+                  <td>Комментарии</td>
+                </tr>
+              </table>
             </li>
           </ul>
         </div>
@@ -182,7 +261,7 @@
 
       <!-- Contacts  -->
       <section class="contacts">
-        <div class="contacts__container">
+        <div class="container">
           <h2 class="visually-hidden">Контакты.</h2>
           <p class="contacts__title">
             Остались вопросы?<br />
@@ -204,6 +283,14 @@
             <b class="contacts__subtitle">Приезжайте в гости:</b>
             <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
           </div>
+          <div>
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A374a1ca2e983028cf6a4f3ccb66c8f873e20c2d72cc69843de66b505bae47f44&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
         </div>
       </section>
       <!-- Contacts  -->
@@ -211,9 +298,8 @@
     <!-- Main -->
 
     <!-- Footer  -->
-
     <footer class="main-footer">
-      <div class="main-footer__container">
+      <div class="container">
         <a class="main-footer__logo" href="index.html"
           ><span class="visually-hidden">Логотип PINK.</span></a
         >
@@ -244,7 +330,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Footer  -->
   </body>
 </html>
