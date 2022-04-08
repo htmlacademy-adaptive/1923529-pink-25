@@ -47,8 +47,8 @@
     <!-- Main -->
     <main class="main">
       <!-- Contest -->
-      <section class="contest">
-        <h2 class="contest__title">
+      <section class="contest common">
+        <h2 class="common__title">
           Конкурс на самое безбашенное путешествие с Пинк
         </h2>
       </section>
@@ -68,7 +68,7 @@
           >
             <fieldset class="filters__group">
               <legend class="visually-hidden">Инициалы.</legend>
-              <label class="filters__lable" for="surname">ФАМИЛИЯ:</label>
+              <label class="filters__lable" for="surname">Фамилия:</label>
               <input
                 class="filters__input"
                 type="text"
@@ -77,7 +77,7 @@
                 placeholder="Укажите фамилию *"
                 required
               />
-              <label class="filters__lable" for="name">ИМЯ:</label>
+              <label class="filters__lable" for="name">Имя:</label>
               <input
                 class="filters__input"
                 type="text"
@@ -86,7 +86,7 @@
                 placeholder="Введите ваше имя *"
                 required
               />
-              <label class="filters__lable" for="patronymic">ОТЧЕСТВО:</label>
+              <label class="filters__lable" for="patronymic">Отчество:</label>
               <input
                 class="filters__input"
                 type="text"
@@ -174,7 +174,7 @@
             <fieldset class="filters__group">
               <legend class="filters__legend">Контактная информация</legend>
               <label class="filters__lable" for="phone-number"
-                >НОМЕР ТЕЛЕФОНА</label
+                >Номер телефона</label
               >
               <input
                 class="filters__input"
@@ -185,7 +185,7 @@
                 required
               />
               <label class="filters__lable" for="email-address"
-                >АДРЕС ПОЧТЫ</label
+                >Адрес почты</label
               >
               <input
                 class="filters__input"
@@ -240,7 +240,7 @@
               </legend>
             </fieldset>
             <fieldset class="filters__group">
-              <legend class="filters__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <legend class="filters__legend">Опишите свои эмоции</legend>
               <textarea
                 class="filters__textarea"
                 name="comment"
@@ -250,10 +250,12 @@
                 rows="5"
               ></textarea>
             </fieldset>
-            <button class="filters__button" type="submit">
-              Отправить форму
-            </button>
-            <small class="filers__small">* — обязательные поля</small>
+            <div class="filters__send">
+              <button class="filters__button" type="submit">
+                Отправить форму
+              </button>
+              <small class="filers__small">* — обязательные поля</small>
+            </div>
           </form>
         </div>
       </section>
