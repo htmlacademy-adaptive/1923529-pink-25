@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html class="body" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body class="page__body">
@@ -27,14 +28,18 @@
           <div class="navigation__container">
             <ul class="navigation__list">
               <li class="navigation__item navigation__item--current">
-                <a>Главная</a>
+                <a class="navigation__link">Главная</a>
               </li>
               <li class="navigation__item">
-                <a href="catalog.html">Фотографии</a>
+                <a class="navigation__link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="navigation__item"><a href="form.html">Конкурс</a></li>
               <li class="navigation__item">
-                <a href="https://htmlacademy.ru/">HTML Academy</a>
+                <a class="navigation__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="https://htmlacademy.ru/"
+                  >HTML Academy</a
+                >
               </li>
             </ul>
           </div>
@@ -47,30 +52,32 @@
     <main class="main">
       <!-- Intro -->
       <section class="intro common">
-        <div class="intro-container">
+        <div class="container">
           <h2 class="visually-hidden">Вступление.</h2>
           <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
-          <a href="" class="intro__download button">Скачать приложение</a>
-          <ul class="intro__list">
-            <li class="intro__item">
-              <a class="intro__android" href=""
-                ><span class="visually-hidden">Скачать на Android.</span></a
-              >
-            </li>
-            <li class="intro__item">
-              <a class="intro__windows" href=""
-                ><span class="visually-hidden">Скачать на Windows.</span></a
-              >
-            </li>
-            <li class="intro__item">
-              <a class="intro__ios" href=""
-                ><span class="visually-hidden">Скачать на IOS.</span></a
-              >
-            </li>
-          </ul>
-          <p class="intro__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
+          <div class="intro__wrapper">
+            <a href="" class="intro__download button">Скачать приложение</a>
+            <ul class="intro__list">
+              <li class="intro__item">
+                <a class="intro__android" href=""
+                  ><span class="visually-hidden">Скачать на Android.</span></a
+                >
+              </li>
+              <li class="intro__item">
+                <a class="intro__windows" href=""
+                  ><span class="visually-hidden">Скачать на Windows.</span></a
+                >
+              </li>
+              <li class="intro__item">
+                <a class="intro__ios" href=""
+                  ><span class="visually-hidden">Скачать на IOS.</span></a
+                >
+              </li>
+            </ul>
+            <p class="intro__description">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
         </div>
       </section>
       <!-- Intro -->
@@ -79,13 +86,15 @@
       <section class="information">
         <div class="container">
           <h2 class="visually-hidden">Информация.</h2>
-          <p class="information__slogan">Устали от серости мегаполиса?</p>
-          <p class="information__slogan">Нам есть, что вам предложить!</p>
+          <div class="information__wrapper">
+            <p class="information__slogan">Устали от серости мегаполиса?</p>
+            <p class="information__slogan">Нам есть, что вам предложить!</p>
+          </div>
           <ul class="information__list">
             <li class="information__item">
               <img
                 class="information__phone"
-                src="/source/img/index/phone-1.jpg"
+                src="img/index/phone-1.jpg"
                 width="186"
                 height="382"
                 alt="Скриншот."
@@ -99,7 +108,7 @@
             <li class="information__item">
               <img
                 class="information__phone"
-                src="/source/img/index/phone-2.jpg"
+                src="img/index/phone-2.jpg"
                 width="186"
                 height="382"
                 alt="Скриншот с фильтром."
@@ -113,7 +122,7 @@
             <li class="information__item">
               <img
                 class="information__phone"
-                src="/source/img/index/phone-3.jpg"
+                src="img/index/phone-3.jpg"
                 width="186"
                 height="382"
                 alt="Скриншот с смайликом."
@@ -124,14 +133,16 @@
                 заводите новых
               </p>
             </li>
+            <li class="information__item">
+              <img
+                class="information__mobile-phone"
+                src="img/index/mobile-phone.jpg"
+                width="157"
+                height="320"
+                alt="Телефон."
+              />
+            </li>
           </ul>
-          <img
-            class="information__mobile-phone"
-            src="img/index/mobile-phone.jpg"
-            width="157"
-            height="320"
-            alt="Телефон."
-          />
         </div>
       </section>
       <!-- Information -->
@@ -196,13 +207,13 @@
                   </th>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Розовый фильтр</td>
+                  <td class="card__subtitle">Розовый фильтр</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Смайлики</td>
+                  <td class="card__subtitle">Смайлики</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Комментарии</td>
+                  <td class="card__subtitle">Комментарии</td>
                 </tr>
               </table>
             </li>
@@ -214,13 +225,13 @@
                   </th>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Розовый фильтр</td>
+                  <td class="card__subtitle">Розовый фильтр</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Смайлики</td>
+                  <td class="card__subtitle">Смайлики</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Комментарии</td>
+                  <td class="card__subtitle">Комментарии</td>
                 </tr>
               </table>
             </li>
@@ -232,13 +243,13 @@
                   </th>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Розовый фильтр</td>
+                  <td class="card__subtitle">Розовый фильтр</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Смайлики</td>
+                  <td class="card__subtitle">Смайлики</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td>Комментарии</td>
+                  <td class="card__subtitle">Комментарии</td>
                 </tr>
               </table>
             </li>
@@ -278,7 +289,7 @@
             <b class="contacts__subtitle">Приезжайте в гости:</b>
             <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
           </div>
-          <div>
+          <div class="contacts__map">
             <script
               type="text/javascript"
               charset="utf-8"
@@ -318,7 +329,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/"
             ><span class="visually-hidden">HTML Academy</span></a
           >
