@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html class="body" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Пинк-Католог</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page-body">
+  <body class="page__body">
     <h1 class="visually-hidden">Фотографии.</h1>
 
     <!-- Header -->
@@ -28,14 +29,18 @@
           <div class="navigation__container">
             <ul class="navigation__list">
               <li class="navigation__item navigation__item--current">
-                <a href="index.html">Главная</a>
+                <a class="navigation__link" href="index.html">Главная</a>
               </li>
               <li class="navigation__item">
-                <a href="catalog.html">Фотографии</a>
+                <a class="navigation__link" href="catalog.html">Фотографии</a>
               </li>
-              <li class="navigation__item"><a href="form.html">Конкурс</a></li>
               <li class="navigation__item">
-                <a href="https://htmlacademy.ru/">HTML Academy</a>
+                <a class="navigation__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="https://htmlacademy.ru/"
+                  >HTML Academy</a
+                >
               </li>
             </ul>
           </div>
@@ -59,17 +64,12 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как
           не хватает ваших?
         </p>
-        <div class="photo-card__panorama ponorama">
+        <div class="photo-card__panorama">
           <div class="container">
-            <p class="ponorama__text">Понорама дня</p>
+            <p class="photo-card__ponorama-text">Понорама дня</p>
           </div>
         </div>
         <div class="container">
-          <div class="photo-card__container">
-            <p class="ponorama__text">Понорама дня</p>
-          </div>
-        </div>
-        <div class="photo-card__ container">
           <ul class="photo-card__list">
             <li class="photo-card__item comment">
               <b class="comment__author">Анна</b>
@@ -271,7 +271,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/"
             ><span class="visually-hidden">HTML Academy</span></a
           >
