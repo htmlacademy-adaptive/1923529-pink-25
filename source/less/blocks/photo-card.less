@@ -8,19 +8,65 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+  margin: 0;
 }
 
-.photo-card__ponorama-text {
+.photo-card__panorama {
+  display: inline-block;
   font-weight: 700;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #d22856;
+  margin-bottom: 113px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 485px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 482px;
+  }
 }
 
 .photo-card__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px;
+  }
+}
+
+.photo-card__item:first-child {
+  grid-column: 1 / -1;
+}
+
+.photo-card__wrapper {
+  background-image: url("../img/catalog/panorama-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 137px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/panorama-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 660px 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/panorama-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 506px;
+  }
 }

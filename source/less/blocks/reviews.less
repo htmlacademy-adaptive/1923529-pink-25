@@ -9,6 +9,15 @@
   list-style-type: none;
 }
 
+.reviews__item {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .reviews__author {
   font-weight: 700;
   font-size: 18px;
@@ -17,10 +26,15 @@
 }
 
 .reviews__info {
+  display: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .reviews__text {
@@ -28,4 +42,9 @@
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  order: -1;
+}
+
+.reviews__toggles {
+  text-align: center;
 }

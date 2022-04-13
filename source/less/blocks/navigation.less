@@ -1,11 +1,17 @@
-//
 .navigation__list {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    max-width: 790px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .navigation__link {
@@ -16,4 +22,20 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+.navigation__item {
+  @media (min-width: @desktop-width) {
+    margin-right: 79px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__toogle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

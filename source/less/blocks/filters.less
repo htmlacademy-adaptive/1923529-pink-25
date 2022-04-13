@@ -1,3 +1,14 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(4) {
+      order: -1;
+    }
+  }
+}
+
 .filters__group {
   background-color: #ffffff;
   color: #000000;
@@ -38,4 +49,11 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #2aab6d;
+}
+
+.filters__textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
 }

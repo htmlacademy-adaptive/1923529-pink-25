@@ -1,22 +1,49 @@
 .intro {
-  background-color: #092840;
+  background-color: #1d2631;
   color: #ffffff;
+  padding-top: 95px;
+  margin-top: -66px;
+  background-image: url("../img/index/intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 462px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/index/intro-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 660px 729px;
+    padding-top: 212px;
+    margin-top: -110px;
+    padding-bottom: 119px;
+    background-position: bottom;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index/intro-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 853px;
+  }
 }
 
 .intro__title {
   font-weight: 300;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 28px;
   color: #ffffff;
+  margin: 0;
+  margin-bottom: 320px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 150px;
+  }
 }
 
 .intro__download {
+  display: block;
   color: #ffffff;
-}
 
-.intro__wrapper {
-  background-color: #1d2631;
-  color: #ffffff;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 177px;
+  }
 }
 
 .intro__list {
@@ -30,4 +57,5 @@
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
+  margin: 0;
 }
