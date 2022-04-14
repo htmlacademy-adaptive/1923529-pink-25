@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -12,20 +14,20 @@
     <!-- Header -->
     <header class="main-header">
       <div class="container">
-        <a
-          ><img
-            class="main-header__logo"
-            src="img/index/pink.svg"
-            width="74"
-            height="23"
-            alt="Логотип PINK."
-        /></a>
-        <nav class="navigation">
-          <h2 class="visually-hidden">Меню.</h2>
-          <button class="navigation__toogle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <div class="navigation__container">
+        <div class="main-header__wrapper">
+          <a class="main-header__link"
+            ><img
+              class="main-header__logo"
+              src="img/index/pink.svg"
+              width="74"
+              height="23"
+              alt="Логотип PINK."
+          /></a>
+          <nav class="navigation">
+            <h2 class="visually-hidden">Меню.</h2>
+            <button class="navigation__toogle" type="button">
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
             <ul class="navigation__list">
               <li class="navigation__item navigation__item--current">
                 <a class="navigation__link">Главная</a>
@@ -42,8 +44,8 @@
                 >
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- Header -->
@@ -84,68 +86,92 @@
 
       <!-- Information -->
       <section class="information">
-        <div class="container">
-          <h2 class="visually-hidden">Информация.</h2>
-          <div class="information__wrapper">
-            <p class="information__slogan">Устали от серости мегаполиса?</p>
-            <p class="information__slogan">Нам есть, что вам предложить!</p>
+        <h2 class="visually-hidden">Информация.</h2>
+        <p class="information__slogan">Устали от серости мегаполиса?</p>
+        <p class="information__slogan">Нам есть, что вам предложить!</p>
+        <div class="information__wrapper">
+          <div class="container information__inner">
+            <img
+              class="information__tablet-phone"
+              src="img/index/tablet-phone.png"
+              width="268"
+              height="547"
+              alt="Телефон."
+            />
+            <ul class="information__list">
+              <li class="information__item">
+                <img
+                  class="information__phone"
+                  src="img/index/phone-1.png"
+                  width="186"
+                  height="382"
+                  alt="Скриншот."
+                />
+                <h3 class="information__title">Поднимает настроение</h3>
+                <p class="information__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию
+                  буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="information__item">
+                <img
+                  class="information__phone"
+                  src="img/index/phone-2.png"
+                  width="186"
+                  height="382"
+                  alt="Скриншот с фильтром."
+                />
+                <h3 class="information__title">Меняет мир вокруг</h3>
+                <p class="information__description">
+                  Сделайте снимок и украсьте его смайликом или текстовой
+                  подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="information__item">
+                <img
+                  class="information__phone"
+                  src="img/index/phone-3.png"
+                  width="186"
+                  height="382"
+                  alt="Скриншот с смайликом."
+                />
+                <h3 class="information__title">Заводит новых друзей</h3>
+                <p class="information__description">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+                  и заводите новых
+                </p>
+              </li>
+              <li class="information__item">
+                <img
+                  class="information__mobile-phone"
+                  src="img/index/mobile-phone.png"
+                  width="157"
+                  height="320"
+                  alt="Телефон."
+                />
+              </li>
+            </ul>
           </div>
-          <ul class="information__list">
-            <li class="information__item">
-              <img
-                class="information__phone"
-                src="img/index/phone-1.jpg"
-                width="186"
-                height="382"
-                alt="Скриншот."
-              />
-              <h3 class="information__title">Поднимает настроение</h3>
-              <p class="information__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию
-                буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="information__item">
-              <img
-                class="information__phone"
-                src="img/index/phone-2.jpg"
-                width="186"
-                height="382"
-                alt="Скриншот с фильтром."
-              />
-              <h3 class="information__title">Меняет мир вокруг</h3>
-              <p class="information__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                чтобы усилить эффект
-              </p>
-            </li>
-            <li class="information__item">
-              <img
-                class="information__phone"
-                src="img/index/phone-3.jpg"
-                width="186"
-                height="382"
-                alt="Скриншот с смайликом."
-              />
-              <h3 class="information__title">Заводит новых друзей</h3>
-              <p class="information__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых
-              </p>
-            </li>
-            <li class="information__item">
-              <img
-                class="information__mobile-phone"
-                src="img/index/mobile-phone.jpg"
-                width="157"
-                height="320"
-                alt="Телефон."
-              />
-            </li>
-          </ul>
         </div>
       </section>
       <!-- Information -->
+
+      <!-- Day -->
+      <section class="day">
+        <div class="container day__inner">
+          <h2 class="day__title">24</h2>
+          <div class="day__wrapper">
+            <b class="day__subtitle">Эффект на 24 часа!</b>
+            <p class="day__description">
+              Британские ученые провели исследования и доказали, что
+              положительный эффект от использования приложения длится целые
+              сутки!
+            </p>
+            <a class="day__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+      <!-- Day -->
 
       <!-- Reviews -->
       <section class="reviews">
@@ -202,77 +228,80 @@
             <li class="price__item slider__item card">
               <table class="card__list">
                 <tr class="card__item">
-                  <th class="card__title">
+                  <th class="card__title card__base">
                     База<span class="card__price">1,99 USD</span>
                   </th>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Розовый фильтр</td>
+                  <td class="card__subtitle card__filter">Розовый фильтр</td>
                 </tr>
-                <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Смайлики</td>
+                <tr class="card__item card__item--no-check">
+                  <td class="card__subtitle card__smile">Смайлики</td>
                 </tr>
-                <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Комментарии</td>
+                <tr class="card__item card__item--no-check">
+                  <td class="card__subtitle card__comment">Комментарии</td>
                 </tr>
               </table>
             </li>
             <li class="price__item slider__item card">
               <table class="card__list">
                 <tr class="card__item">
-                  <th class="card__title">
+                  <th class="card__title card__standart">
                     Стандарт<span class="card__price">3,99 USD</span>
                   </th>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Розовый фильтр</td>
+                  <td class="card__subtitle card__filter">Розовый фильтр</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Смайлики</td>
+                  <td class="card__subtitle card__smile">Смайлики</td>
                 </tr>
-                <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Комментарии</td>
+                <tr class="card__item card__item--no-check">
+                  <td class="card__subtitle card__comment">Комментарии</td>
                 </tr>
               </table>
             </li>
             <li class="price__item slider__item card">
               <table class="card__list">
                 <tr class="card__item">
-                  <th class="card__title">
+                  <th class="card__title card__anlim">
                     Анлим<span class="card__price">9,99 USD</span>
                   </th>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Розовый фильтр</td>
+                  <td class="card__subtitle card__filter">Розовый фильтр</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Смайлики</td>
+                  <td class="card__subtitle card__smile">Смайлики</td>
                 </tr>
                 <tr class="card__item card__item--check">
-                  <td class="card__subtitle">Комментарии</td>
+                  <td class="card__subtitle card__comment">Комментарии</td>
                 </tr>
               </table>
             </li>
           </ul>
-        </div>
-        <div class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">
-            2
-          </button>
-          <button class="slider__toggle" type="button">3</button>
+          <div class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button
+              class="slider__toggle slider__toggle--current"
+              type="button"
+            >
+              2
+            </button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
       <!-- Price  -->
 
       <!-- Contacts  -->
       <section class="contacts">
-        <div class="container">
-          <h2 class="visually-hidden">Контакты.</h2>
-          <p class="contacts__title">
-            Остались вопросы?<br />
-            Свяжитесь с нами!
-          </p>
+        <h2 class="visually-hidden">Контакты.</h2>
+        <p class="contacts__title">
+          Остались вопросы?<br />
+          Свяжитесь с нами!
+        </p>
+        <div class="container contacts__wrapper">
           <div class="contacts__phone">
             <b class="contacts__subtitle">Звоните:</b>
             <a class="contacts__text" href="tel:+78125556666"
@@ -289,14 +318,30 @@
             <b class="contacts__subtitle">Приезжайте в гости:</b>
             <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
           </div>
-          <div class="contacts__map">
-            <script
-              type="text/javascript"
-              charset="utf-8"
-              async
-              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A374a1ca2e983028cf6a4f3ccb66c8f873e20c2d72cc69843de66b505bae47f44&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"
-            ></script>
-          </div>
+        </div>
+        <div class="contacts__map-mobile">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A374a1ca2e983028cf6a4f3ccb66c8f873e20c2d72cc69843de66b505bae47f44&amp;width=320&amp;height=200&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+        <div class="contacts__map-tablet">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A374a1ca2e983028cf6a4f3ccb66c8f873e20c2d72cc69843de66b505bae47f44&amp;width=660&amp;height=374&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+        <div class="contacts__map-desktop">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A374a1ca2e983028cf6a4f3ccb66c8f873e20c2d72cc69843de66b505bae47f44&amp;width=1200&amp;height=502&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
         </div>
       </section>
       <!-- Contacts  -->

@@ -1,15 +1,18 @@
-.main {
-  width: 320px;
+@tablet-width: 660px;
+@desktop-width: 1200px;
+@mobile-width-only: 659px;
+
+.container {
+  width: 280px;
   margin: 0 auto;
-  flex-grow: 1;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    width: 620px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: 940px;
     margin: 0 auto;
   }
 }

@@ -1,4 +1,32 @@
 .main-header {
-  background-color: #092840;
+  width: 320px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__logo {
+  display: block;
 }
