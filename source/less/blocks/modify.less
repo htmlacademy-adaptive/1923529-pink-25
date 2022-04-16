@@ -35,3 +35,23 @@
     justify-content: space-between;
   }
 }
+
+.modify__scale-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modify__scale-mobile {
+    display: none;
+  }
+
+  .modify__scale-tablet {
+    display: block;
+  }
+
+  .modify__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -26,36 +26,25 @@
   text-decoration: none;
 }
 
-.contacts__map-tablet,
-.contacts__map-desktop {
-  display: none;
-}
-
-
-@media (min-width: @tablet-width) {
-  .contacts__map-mobile,
-  .contacts__map-desktop {
-    display: none;
-  }
-
-  .contacts__map-tablet {
-    display: block;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contacts__map-mobile,
-  .contacts__map-tablet {
-    display: none;
-  }
-
-  .contacts__map-desktop {
-    display: block;
-  }
-}
-
 .contacts__wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+}
+
+.contacts__map {
+  display: block;
+  border: none;
+  width: 320px;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 502px;
   }
 }
