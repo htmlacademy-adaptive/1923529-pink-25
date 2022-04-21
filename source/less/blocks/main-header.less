@@ -17,14 +17,23 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 39px;
-    padding-bottom: 39px;
+    padding: 0;
   }
+}
+
+.main-header__nav {
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000000;
 }
 
 .main-header__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .main-header__logo {

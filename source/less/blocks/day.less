@@ -5,6 +5,14 @@
     display: block;
     background-color: #ffffff;
     color: #000000;
+    padding-top: 54px;
+    padding-bottom: 109px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    padding-top: 17px;
+    padding-bottom: 67px;
   }
 }
 
@@ -15,7 +23,77 @@
 .day__title {
   font-weight: 700;
   font-size: 96px;
-  line-height: 163px;
+  line-height: 75px;
   color: #d22856;
-  margin-right: 136px;
+  margin: 0;
+  margin-right: 72px;
+  padding: 116px 64px 85px 64px;
+  background-image: url("../img/index/timer.png");
+  background-size: 238px 276px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 94px;
+    padding: 145px 80px 106px 80px;
+    margin-right: 71px;
+    background-image: url("../img/index/timer-desktop.png");
+    background-size: 298px 345px;
+    background-repeat: no-repeat;
+  }
+}
+
+.day__subtitle {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 48px;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 98px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.day__description {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 37px;
+    margin-bottom: 47px;
+    max-width: 540px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.day__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

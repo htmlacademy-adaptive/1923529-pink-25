@@ -25,7 +25,7 @@
           /></a>
           <nav class="navigation navigation--closed navigation--nojs">
             <h2 class="visually-hidden">Меню.</h2>
-            <button class="navigation__toogle" type="button">
+            <button class="navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
             <ul class="navigation__list">
@@ -55,30 +55,33 @@
       <!-- Intro -->
       <section class="intro common">
         <div class="container">
-          <h2 class="visually-hidden">Вступление.</h2>
-          <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
-          <div class="intro__wrapper">
-            <a href="" class="intro__download button">Скачать приложение</a>
-            <ul class="intro__list">
-              <li class="intro__item">
-                <a class="intro__android" href=""
-                  ><span class="visually-hidden">Скачать на Android.</span></a
-                >
-              </li>
-              <li class="intro__item">
-                <a class="intro__windows" href=""
-                  ><span class="visually-hidden">Скачать на Windows.</span></a
-                >
-              </li>
-              <li class="intro__item">
-                <a class="intro__ios" href=""
-                  ><span class="visually-hidden">Скачать на IOS.</span></a
-                >
-              </li>
-            </ul>
-            <p class="intro__description">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+          <div class="intro__inner">
+            <h2 class="visually-hidden">Вступление.</h2>
+            <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
+            <div class="intro__wrapper">
+              <a href="" class="intro__download button">Скачать приложение</a>
+              <ul class="intro__list">
+                <li class="intro__item">
+                  <a class="intro__apple" href=""
+                    ><span class="visually-hidden">Скачать на IOS.</span></a
+                  >
+                </li>
+                <li class="intro__item">
+                  <a class="intro__android" href=""
+                    ><span class="visually-hidden">Скачать на Android.</span></a
+                  >
+                </li>
+                <li class="intro__item">
+                  <a class="intro__windows" href=""
+                    ><span class="visually-hidden">Скачать на Windows.</span></a
+                  >
+                </li>
+              </ul>
+              <p class="intro__description">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
+                8
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -161,11 +164,16 @@
         <div class="container day__inner">
           <h2 class="day__title">24</h2>
           <div class="day__wrapper">
-            <b class="day__subtitle">Эффект на 24 часа!</b>
+            <b class="day__subtitle"
+              >Эффект <br />
+              на 24 часа!</b
+            >
             <p class="day__description">
-              Британские ученые провели исследования и доказали, что
-              положительный эффект от использования приложения длится целые
-              сутки!
+              Британские ученые провели исследования и&nbsp;доказали,
+              что&nbsp;положительный эффект от&nbsp;использования приложения
+              длится
+              <br />
+              целые сутки!
             </p>
             <a class="day__link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -175,7 +183,7 @@
 
       <!-- Reviews -->
       <section class="reviews">
-        <div class="container slider">
+        <div class="container reviews__slider">
           <h2 class="visually-hidden">Отзывы.</h2>
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
@@ -222,7 +230,7 @@
 
       <!-- Price  -->
       <section class="price">
-        <div class="container slider">
+        <div class="container price__slider">
           <h2 class="visually-hidden">Тарифы.</h2>
           <ul class="price__list slider__list">
             <li class="price__item slider__item card">
@@ -291,6 +299,38 @@
             <button class="slider__toggle" type="button">3</button>
           </div>
         </div>
+        <table class="price__table container">
+          <tr class="card__item">
+            <th class="card__empty"></th>
+            <th class="card__title card__base">
+              База<span class="card__price">1,99 USD</span>
+            </th>
+            <th class="card__title card__standart">
+              Стандарт<span class="card__price">3,99 USD</span>
+            </th>
+            <th class="card__title card__anlim">
+              Анлим<span class="card__price">9,99 USD</span>
+            </th>
+          </tr>
+          <tr class="card__item">
+            <td class="card__subtitle card__filter">Розовый фильтр</td>
+            <td class="card__cell card__border card__item--check"></td>
+            <td class="card__cell card__border card__item--check"></td>
+            <td class="card__cell card__border card__item--check"></td>
+          </tr>
+          <tr class="card__item">
+            <td class="card__subtitle card__smile">Смайлики</td>
+            <td class="card__cell card__item--no-check"></td>
+            <td class="card__cell card__item--check"></td>
+            <td class="card__cell card__item--check"></td>
+          </tr>
+          <tr class="card__item">
+            <td class="card__subtitle card__comment">Комментарии</td>
+            <td class="card__cell card__item--no-check"></td>
+            <td class="card__cell card__item--no-check"></td>
+            <td class="card__cell card__item--check"></td>
+          </tr>
+        </table>
       </section>
       <!-- Price  -->
 
@@ -316,7 +356,7 @@
           </div>
           <div class="contacts__adress">
             <b class="contacts__subtitle">Приезжайте в гости:</b>
-            <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+            <span class="contacts__text">ул. Большая <br> Конюшенная, 19/8</span>
           </div>
         </div>
         <iframe
@@ -366,5 +406,7 @@
       </div>
     </footer>
     <!-- Footer  -->
+
+    <script src="js/script-navigation.js"></script>
   </body>
 </html>

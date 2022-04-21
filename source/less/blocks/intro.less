@@ -2,6 +2,7 @@
   background-color: #1d2631;
   color: #ffffff;
   padding-top: 95px;
+  padding-bottom: 38px;
   margin-top: -66px;
   background-image: url("../img/index/intro-mobile.jpg");
   background-repeat: no-repeat;
@@ -13,36 +14,69 @@
     background-size: 660px 729px;
     padding-top: 212px;
     margin-top: -110px;
-    padding-bottom: 119px;
-    background-position: bottom;
+    padding-bottom: 108px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/index/intro-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 1200px 853px;
+    padding-top: 224px;
+    padding-bottom: 111px;
   }
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 300px;
 }
 
 .intro__title {
   font-weight: 300;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 29px;
+  text-align: center;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 320px;
+  margin-bottom: 348px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 150px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 39px;
+    max-width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 58px;
+    max-width: 300px;
   }
 }
 
 .intro__download {
   display: block;
   color: #ffffff;
+  text-align: center;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 177px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -50,6 +84,29 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  margin-top: 32px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 46px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 87px;
+    margin-bottom: 58px;
+  }
+}
+
+.intro__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .intro__description {
@@ -58,4 +115,36 @@
   line-height: 24px;
   color: #ffffff;
   margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 300px;
+  }
+}
+
+.intro__apple {
+  display: block;
+  background-image: url("../img/index/apple-logo.svg");
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
+}
+
+.intro__android {
+  display: block;
+  background-image: url("../img/index/android-logo.svg");
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+}
+
+.intro__windows {
+  display: block;
+  background-image: url("../img/index/microsoft-logo.svg");
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
 }

@@ -1,6 +1,30 @@
 .price {
   background-color: #f2f2f2;
   color: #000000;
+  padding-top: 81px;
+  padding-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 114px;
+    padding-bottom: 70px;
+  }
+}
+
+.price__table {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+}
+
+.price__slider {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .price__list {
@@ -8,10 +32,6 @@
   padding: 0;
   list-style-type: none;
   background-color: #ffffff;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
 }
 
 .price__toggles {
