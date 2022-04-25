@@ -22,21 +22,21 @@
               height="23"
               alt="Логотип PINK."
           /></a>
-          <nav class="navigation">
+          <nav class="navigation navigation--closed navigation--nojs">
             <h2 class="visually-hidden">Меню.</h2>
-            <button class="navigation__toogle" type="button">
+            <button class="navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
 
             <ul class="navigation__list">
-              <li class="navigation__item navigation__item--current">
+              <li class="navigation__item">
                 <a class="navigation__link" href="index.html">Главная</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="catalog.html">Фотографии</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Конкурс</a>
+                <a class="navigation__link navigation__item--current" href="form.html">Конкурс</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="https://htmlacademy.ru/"
@@ -54,9 +54,11 @@
     <main class="main">
       <!-- Contest -->
       <section class="contest common">
-        <h2 class="common__title">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h2>
+        <div class="container">
+          <h2 class="common__title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h2>
+        </div>
       </section>
       <!-- Contest -->
 
@@ -305,5 +307,7 @@
       </div>
     </footer>
     <!-- Footer  -->
+
+    <script src="js/script-navigation.js"></script>
   </body>
 </html>

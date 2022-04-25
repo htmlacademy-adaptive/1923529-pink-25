@@ -1,22 +1,103 @@
 .card__title {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 12px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #283645;
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 35px;
+  border-right: 2px solid #f2f2f2;
+  border-left: 2px solid #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 13px;
+  }
 }
 
 .card__price {
+  display: block;
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 13px;
+  margin-top: 15px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 18px;
+  }
 }
 
 .card__subtitle {
   font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 10px;
   text-transform: uppercase;
   color: #283645;
+  padding: 24px 17px 25px 20px;
+  border: 2px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+    padding: 18px 24px 17px 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 13px;
+    padding: 23px 65px 23px 22px;
+    white-space: nowrap;
+  }
+}
+
+.card__list {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.card__filter {
+  border-top: none;
+
+  @media (min-width: @tablet-width) {
+    border-top: 2px solid #e5e5e5;
+  }
+}
+
+.card__base {
+  @media (min-width: @tablet-width) {
+    border-left: 2px solid #283645;
+  }
+}
+
+.card__anlim {
+  @media (min-width: @tablet-width) {
+    border-right: 2px solid #283645;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card__item {
+    background-color: #ffffff;
+  }
+
+  .card__title,
+  .card__subtitle,
+  .card__cell {
+    width: 25%;
+  }
+
+  .card__cell {
+    border: 2px solid #e5e5e5;
+  }
+
+  .card__border {
+    border-top: 2px solid #283645;
+  }
+
+  .card__empty {
+    background-color: #f2f2f2;
+  }
 }
