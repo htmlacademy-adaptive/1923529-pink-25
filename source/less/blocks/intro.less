@@ -9,6 +9,13 @@
   background-position: center top;
   background-size: auto auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/intro-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 462px;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/index/intro-tablet.jpg");
     background-repeat: no-repeat;
@@ -17,6 +24,13 @@
     padding-top: 212px;
     margin-top: -110px;
     padding-bottom: 108px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/intro-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +40,13 @@
     background-size: cover;
     padding-top: 224px;
     padding-bottom: 111px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/intro-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
   }
 }
 
@@ -64,7 +85,7 @@
   @media (min-width: @tablet-width) {
     font-weight: 300;
     font-size: 40px;
-    line-height: 42px;
+    line-height: 40px;
     margin-bottom: 39px;
     max-width: 200px;
   }
@@ -72,7 +93,7 @@
   @media (min-width: @desktop-width) {
     font-weight: 300;
     font-size: 50px;
-    line-height: 58px;
+    line-height: 50px;
     max-width: 300px;
   }
 }
@@ -83,12 +104,23 @@
   text-align: center;
   width: 280px;
 
+  &:hover {
+    background-color: #ffffff;
+    color: rgba(210, 40, 86, 1);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     width: 300px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 18px;
+    font-size: 21px;
+    line-height: 16px;
+    padding: 17px 0;
   }
 }
 

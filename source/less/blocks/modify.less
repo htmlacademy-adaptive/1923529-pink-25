@@ -1,6 +1,10 @@
 .modify {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
 }
 
 .modify__title {
@@ -9,6 +13,13 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 52px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .modify__filters {
@@ -23,10 +34,63 @@
 
 .modify__upload {
   color: #d22856;
+  width: 280px;
+  border-color: rgba(210, 40, 86, 1);
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin-bottom: 0;
+  }
 }
 
 .modify__cancel {
   color: rgba(40, 54, 69, 0.1);
+  width: 280px;
+  border-color: rgba(40, 54, 69, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: transparent;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
+}
+
+.modify__btn {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .modify__wrapper {

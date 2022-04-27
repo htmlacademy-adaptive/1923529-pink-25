@@ -2,9 +2,15 @@
   background-color: #ffffff;
   color: #000000;
   padding-top: 54px;
+  padding-bottom: 49px;
 
   @media (min-width: @tablet-width) {
     padding-top: 100px;
+    padding-bottom: 73px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 67px;
   }
 }
 
@@ -27,7 +33,7 @@
     margin-bottom: 85px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     max-width: 600px;
     margin-bottom: 97px;
   }
@@ -48,11 +54,11 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 485px;
+    margin-bottom: 417px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 482px;
+    margin-bottom: 417px;
   }
 }
 
@@ -84,15 +90,34 @@
   background-size: auto;
   background-position: top;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/panorama-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 137px;
+    background-position: top;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/catalog/panorama-tablet.jpg");
     background-repeat: no-repeat;
     padding-top: 57px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/panorama-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 509px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/catalog/panorama-desktop.jpg");
     background-repeat: no-repeat;
     padding-top: 54px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/panorama-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 506px;
+    }
   }
 }
