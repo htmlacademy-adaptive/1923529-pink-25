@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Пинк-Католог</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon-16x16.png" type="image/png" />
+    <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png" />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicons/apple-icon-152x152.png"
+      type="image/png"
+    />
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Фотографии.</h1>
@@ -113,6 +121,8 @@
                       class="comment__picture"
                       src="img/catalog/photo-1-mobile.jpg"
                       srcset="img/catalog/photo-1-mobile@2x.jpg 2x"
+                      width="280"
+                      height="180"
                       alt="Машина."
                     /> </picture
                 ></a>
@@ -147,6 +157,8 @@
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-2-mobile.jpg"
+                      width="280"
+                      height="180"
                       alt="Барабанная установка."
                     />
                   </picture>
@@ -180,6 +192,8 @@
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-3-mobile.jpg"
+                      width="280"
+                      height="180"
                       alt="Стеклянный потолок."
                     /> </picture
                 ></a>
@@ -214,6 +228,8 @@
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-4-mobile.jpg"
+                      width="280"
+                      height="180"
                       alt="Шатер."
                     /> </picture
                 ></a>
@@ -246,6 +262,8 @@
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-5-mobile.jpg"
+                      width="280"
+                      height="180"
                       alt="Человек на горе."
                     /> </picture
                 ></a>
@@ -278,6 +296,8 @@
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-6-mobile.jpg"
+                      width="280"
+                      height="180"
                       alt="Крыло сымолета."
                     /> </picture
                 ></a>
@@ -304,84 +324,90 @@
             Затмите их всех! <br />
             Выкладывайте все, что накопилось в телефоне!
           </p>
-          <form
-            class="modify__filters"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <div class="modify__wrapper">
-              <picture>
-                <source
-                  media="(min-width: 660px)"
-                  srcset="
-                    img/catalog/modify-tablet.jpg    1x,
-                    img/catalog/modify-tablet@2x.jpg 2x
-                  "
-                />
-                <img
-                  class="modify__picture"
-                  src="img/catalog/modify-mobile.jpg"
-                  srcset="img/catalog/modify-mobile@2x.jpg 2x"
-                  alt="Зимняя дорога."
-                />
-              </picture>
-              <div class="modify__inner">
-                <ul class="modify__list">
-                  <li class="modify__item">
-                    <span class="visually-hidden">Обрезка.</span>
-                    <div class="modify__scale-tablet">
-                      <div class="modify__bar">
-                        <button class="modify__toggle" type="button">
-                          <span class="visually-hidden"
-                            >Увидеть изменения.</span
-                          >
-                        </button>
+        </div>
+        <div class="modify__box">
+          <div class="container">
+            <form
+              class="modify__filters"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <div class="modify__wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 660px)"
+                    srcset="
+                      img/catalog/modify-tablet.jpg    1x,
+                      img/catalog/modify-tablet@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="modify__picture"
+                    src="img/catalog/modify-mobile.jpg"
+                    srcset="img/catalog/modify-mobile@2x.jpg 2x"
+                    width="280"
+                    height="374"
+                    alt="Зимняя дорога."
+                  />
+                </picture>
+                <div class="modify__inner">
+                  <ul class="modify__list">
+                    <li class="modify__item">
+                      <span class="visually-hidden">Обрезка.</span>
+                      <div class="modify__scale-tablet">
+                        <div class="modify__bar">
+                          <button class="modify__toggle" type="button">
+                            <span class="visually-hidden"
+                              >Увидеть изменения.</span
+                            >
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="modify__item">
-                    <span class="visually-hidden">Цвет.</span>
-                    <div class="modify__scale-tablet">
-                      <div class="modify__bar">
-                        <button class="modify__toggle" type="button">
-                          <span class="visually-hidden"
-                            >Увидеть изменения.</span
-                          >
-                        </button>
+                    </li>
+                    <li class="modify__item">
+                      <span class="visually-hidden">Цвет.</span>
+                      <div class="modify__scale-tablet">
+                        <div class="modify__bar">
+                          <button class="modify__toggle" type="button">
+                            <span class="visually-hidden"
+                              >Увидеть изменения.</span
+                            >
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="modify__item">
-                    <span class="visually-hidden">Контраст.</span>
-                    <div class="modify__scale-tablet">
-                      <div class="modify__bar">
-                        <button class="modify__toggle" type="button">
-                          <span class="visually-hidden"
-                            >Увидеть изменения.</span
-                          >
-                        </button>
+                    </li>
+                    <li class="modify__item">
+                      <span class="visually-hidden">Контраст.</span>
+                      <div class="modify__scale-tablet">
+                        <div class="modify__bar">
+                          <button class="modify__toggle" type="button">
+                            <span class="visually-hidden"
+                              >Увидеть изменения.</span
+                            >
+                          </button>
+                        </div>
                       </div>
+                    </li>
+                  </ul>
+                  <div class="modify__scale-mobile">
+                    <div class="modify__bar">
+                      <button class="modify__toggle" type="button">
+                        <span class="visually-hidden">Увидеть изменения.</span>
+                      </button>
                     </div>
-                  </li>
-                </ul>
-                <div class="modify__scale-mobile">
-                  <div class="modify__bar">
-                    <button class="modify__toggle" type="button">
-                      <span class="visually-hidden">Увидеть изменения.</span>
+                  </div>
+                  <div class="modify__btn">
+                    <button class="modify__upload button" type="submit">
+                      Запостить
+                    </button>
+                    <button class="modify__cancel button" type="reset">
+                      Отмена
                     </button>
                   </div>
                 </div>
-                <div class="modify__btn">
-                  <button class="modify__upload button" type="submit">
-                    Запостить
-                  </button>
-                  <button class="modify__cancel button" type="reset">
-                    Отмена
-                  </button>
-                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
       <!-- Modify -->
