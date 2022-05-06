@@ -1,6 +1,29 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.copyright__link {
+  display: flex;
+}
+
 .copyright__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
+  margin-right: 15px;
+}
+
+.copyright__icon {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

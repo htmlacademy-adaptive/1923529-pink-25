@@ -54,9 +54,20 @@
   color: #d22856;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    color: #283645;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__adress .contacts__text {
+  pointer-events: none;
   line-height: 33px;
 }
 
