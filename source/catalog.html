@@ -5,14 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Пинк-Католог</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon-16x16.png" type="image/png" />
+    <link rel="icon" href="img/favicons/favicon-16x16.webp" type="image/webp" />
     <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="img/favicons/favicon-32x32.webp" type="image/webp" />
     <link
       rel="apple-touch-icon"
       href="img/favicons/apple-icon-152x152.png"
       type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicons/apple-icon-152x152.webp"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensans.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensansbold.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensanslight.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
     />
   </head>
   <body class="page__body">
@@ -130,21 +155,29 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        img/catalog/photo-1-desktop.jpg    1x,
-                        img/catalog/photo-1-desktop@2x.jpg 2x
+                        img/catalog/photo-1-desktop.jpg     1x,
+                        img/catalog/photo-1-desktop@2x.jpg  2x,
+                        img/catalog/photo-1-desktop.webp    1x,
+                        img/catalog/photo-1-desktop@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 660px)"
                       srcset="
-                        img/catalog/photo-1-tablet.jpg    1x,
-                        img/catalog/photo-1-tablet@2x.jpg 2x
+                        img/catalog/photo-1-tablet.jpg     1x,
+                        img/catalog/photo-1-tablet@2x.jpg  2x,
+                        img/catalog/photo-1-tablet.webp    1x,
+                        img/catalog/photo-1-tablet@2x.webp 2x
                       "
                     />
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-1-mobile.jpg"
-                      srcset="img/catalog/photo-1-mobile@2x.jpg 2x"
+                      srcset="
+                        img/catalog/photo-1-mobile@2x.jpg  2x,
+                        img/catalog/photo-1-mobile.webp    1x,
+                        img/catalog/photo-1-mobile@2x.webp 2x
+                      "
                       width="280"
                       height="180"
                       alt="Машина."
@@ -167,20 +200,29 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        img/catalog/photo-2-desktop.jpg    1x,
-                        img/catalog/photo-2-desktop@2x.jpg 2x
+                        img/catalog/photo-2-desktop.jpg     1x,
+                        img/catalog/photo-2-desktop@2x.jpg  2x,
+                        img/catalog/photo-2-desktop.webp    1x,
+                        img/catalog/photo-2-desktop@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 660px)"
                       srcset="
-                        img/catalog/photo-2-tablet.jpg    1x,
-                        img/catalog/photo-2-tablet@2x.jpg 2x
+                        img/catalog/photo-2-tablet.jpg     1x,
+                        img/catalog/photo-2-tablet@2x.jpg  2x,
+                        img/catalog/photo-2-tablet.webp    1x,
+                        img/catalog/photo-2-tablet@2x.webp 2x
                       "
                     />
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-2-mobile.jpg"
+                      srcset="
+                        img/catalog/photo-2-mobile@2x.jpg  2x,
+                        img/catalog/photo-2-mobile.webp    1x,
+                        img/catalog/photo-2-mobile@2x.webp 2x
+                      "
                       width="280"
                       height="180"
                       alt="Барабанная установка."
@@ -202,20 +244,29 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        img/catalog/photo-3-desktop.jpg    1x,
-                        img/catalog/photo-3-desktop@2x.jpg 2x
+                        img/catalog/photo-3-desktop.jpg     1x,
+                        img/catalog/photo-3-desktop@2x.jpg  2x,
+                        img/catalog/photo-3-desktop.webp    1x,
+                        img/catalog/photo-3-desktop@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 660px)"
                       srcset="
-                        img/catalog/photo-3-tablet.jpg    1x,
-                        img/catalog/photo-3-tablet@2x.jpg 2x
+                        img/catalog/photo-3-tablet.jpg     1x,
+                        img/catalog/photo-3-tablet@2x.jpg  2x,
+                        img/catalog/photo-3-tablet.webp    1x,
+                        img/catalog/photo-3-tablet@2x.webp 2x
                       "
                     />
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-3-mobile.jpg"
+                      srcset="
+                        img/catalog/photo-3-mobile@2x.jpg  2x,
+                        img/catalog/photo-3-mobile.webp    1x,
+                        img/catalog/photo-3-mobile@2x.webp 2x
+                      "
                       width="280"
                       height="180"
                       alt="Стеклянный потолок."
@@ -238,20 +289,29 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        img/catalog/photo-4-desktop.jpg    1x,
-                        img/catalog/photo-4-desktop@2x.jpg 2x
+                        img/catalog/photo-4-desktop.jpg     1x,
+                        img/catalog/photo-4-desktop@2x.jpg  2x,
+                        img/catalog/photo-4-desktop.webp    1x,
+                        img/catalog/photo-4-desktop@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 660px)"
                       srcset="
-                        img/catalog/photo-4-tablet.jpg    1x,
-                        img/catalog/photo-4-tablet@2x.jpg 2x
+                        img/catalog/photo-4-tablet.jpg     1x,
+                        img/catalog/photo-4-tablet@2x.jpg  2x,
+                        img/catalog/photo-4-tablet.webp    1x,
+                        img/catalog/photo-4-tablet@2x.webp 2x
                       "
                     />
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-4-mobile.jpg"
+                      srcset="
+                        img/catalog/photo-4-mobile@2x.jpg  2x,
+                        img/catalog/photo-4-mobile.webp    1x,
+                        img/catalog/photo-4-mobile@2x.webp 2x
+                      "
                       width="280"
                       height="180"
                       alt="Шатер."
@@ -272,20 +332,29 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        img/catalog/photo-5-desktop.jpg    1x,
-                        img/catalog/photo-5-desktop@2x.jpg 2x
+                        img/catalog/photo-5-desktop.jpg     1x,
+                        img/catalog/photo-5-desktop@2x.jpg  2x,
+                        img/catalog/photo-5-desktop.webp    1x,
+                        img/catalog/photo-5-desktop@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 660px)"
                       srcset="
-                        img/catalog/photo-5-tablet.jpg    1x,
-                        img/catalog/photo-5-tablet@2x.jpg 2x
+                        img/catalog/photo-5-tablet.jpg     1x,
+                        img/catalog/photo-5-tablet@2x.jpg  2x,
+                        img/catalog/photo-5-tablet.webp    1x,
+                        img/catalog/photo-5-tablet@2x.webp 2x
                       "
                     />
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-5-mobile.jpg"
+                      srcset="
+                        img/catalog/photo-5-mobile@2x.jpg  2x,
+                        img/catalog/photo-5-mobile.webp    1x,
+                        img/catalog/photo-5-mobile@2x.webp 2x
+                      "
                       width="280"
                       height="180"
                       alt="Человек на горе."
@@ -306,20 +375,29 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        img/catalog/photo-6-desktop.jpg    1x,
-                        img/catalog/photo-6-desktop@2x.jpg 2x
+                        img/catalog/photo-6-desktop.jpg     1x,
+                        img/catalog/photo-6-desktop@2x.jpg  2x,
+                        img/catalog/photo-6-desktop.webp    1x,
+                        img/catalog/photo-6-desktop@2x.webp 2x
                       "
                     />
                     <source
                       media="(min-width: 660px)"
                       srcset="
-                        img/catalog/photo-6-tablet.jpg    1x,
-                        img/catalog/photo-6-tablet@2x.jpg 2x
+                        img/catalog/photo-6-tablet.jpg     1x,
+                        img/catalog/photo-6-tablet@2x.jpg  2x,
+                        img/catalog/photo-6-tablet.webp    1x,
+                        img/catalog/photo-6-tablet@2x.webp 2x
                       "
                     />
                     <img
                       class="comment__picture"
                       src="img/catalog/photo-6-mobile.jpg"
+                      srcset="
+                        img/catalog/photo-6-mobile@2x.jpg  2x,
+                        img/catalog/photo-6-mobile.webp    1x,
+                        img/catalog/photo-6-mobile@2x.webp 2x
+                      "
                       width="280"
                       height="180"
                       alt="Крыло сымолета."
@@ -361,14 +439,20 @@
                   <source
                     media="(min-width: 660px)"
                     srcset="
-                      img/catalog/modify-tablet.jpg    1x,
-                      img/catalog/modify-tablet@2x.jpg 2x
+                      img/catalog/modify-tablet.jpg     1x,
+                      img/catalog/modify-tablet@2x.jpg  2x,
+                      img/catalog/modify-tablet.webp    1x,
+                      img/catalog/modify-tablet@2x.webp 2x
                     "
                   />
                   <img
                     class="modify__picture"
                     src="img/catalog/modify-mobile.jpg"
-                    srcset="img/catalog/modify-mobile@2x.jpg 2x"
+                    srcset="
+                      img/catalog/modify-mobile@2x.jpg   2x,
+                      img/catalog/modify-mobile.webp    1x,
+                      img/catalog/modify-mobile@2x.webp 2x
+                    "
                     width="280"
                     height="374"
                     alt="Зимняя дорога."
