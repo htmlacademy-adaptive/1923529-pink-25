@@ -6,11 +6,16 @@
   padding: 40px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 36px 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 71px 0;
+    padding: 73px 0;
+
+    &--form {
+      padding: 53px 0;
+    }
   }
 }
 
@@ -27,6 +32,10 @@
 
 .main-footer__logo {
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    align-self: flex-start;
+  }
 }
 
 .main-footer__icon {
