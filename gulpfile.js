@@ -10,6 +10,7 @@ import terser from "gulp-terser";
 import squoosh from "gulp-libsquoosh";
 import svgo from "gulp-svgmin";
 import del from "del";
+import rename from "gulp-rename";
 
 // Styles
 
@@ -19,6 +20,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css", { sourcemaps: "." }))
     .pipe(browser.stream());
 };
@@ -35,7 +37,11 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js"));
+  return gulp
+    .src("source/js/*.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
 };
 
 // Images

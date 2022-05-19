@@ -255,10 +255,14 @@
   border-radius: 1px;
   margin-bottom: 29px;
   outline: none;
-  appearance: none;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
   }
 
   &--phone {
@@ -270,6 +274,7 @@
       background-repeat: no-repeat;
       background-size: 59px 59px;
       background-position: right;
+      appearance: textfield;
     }
 
     @media (min-width: @desktop-width) {

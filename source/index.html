@@ -5,14 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon-16x16.png" type="image/png" />
+    <link rel="icon" href="img/favicons/favicon-16x16.webp" type="image/webp" />
     <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="img/favicons/favicon-32x32.webp" type="image/webp" />
     <link
       rel="apple-touch-icon"
       href="img/favicons/apple-icon-152x152.png"
       type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="img/favicons/apple-icon-152x152.webp"
+      type="image/webp"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensans.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensansbold.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensanslight.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
     />
   </head>
 
@@ -61,7 +86,9 @@
             </button>
             <ul class="navigation__list">
               <li class="navigation__item navigation__item--current">
-                <a class="navigation__link navigation__link--current">Главная</a>
+                <a class="navigation__link navigation__link--current"
+                  >Главная</a
+                >
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="catalog.html">Фотографии</a>
@@ -142,7 +169,11 @@
             <img
               class="information__tablet-phone"
               src="img/index/tablet-phone.png"
-              srcset="img/index/tablet-phone@2x.png 2x"
+              srcset="
+                img/index/tablet-phone@2x.png  2x,
+                img/index/tablet-phone.webp    1x,
+                img/index/tablet-phone@2x.webp 2x
+              "
               width="268"
               height="547"
               alt="Телефон."
@@ -152,7 +183,11 @@
                 <img
                   class="information__phone"
                   src="img/index/phone-1.png"
-                  srcset="img/index/phone-1@2x.png 2x"
+                  srcset="
+                    img/index/phone-1@2x.png  2x,
+                    img/index/phone-1.webp    1x,
+                    img/index/phone-1@2x.webp 2x
+                  "
                   width="186"
                   height="382"
                   alt="Скриншот."
@@ -167,7 +202,11 @@
                 <img
                   class="information__phone"
                   src="img/index/phone-2.png"
-                  srcset="img/index/phone-2@2x.png 2x"
+                  srcset="
+                    img/index/phone-2@2x.png  2x,
+                    img/index/phone-2.webp    1x,
+                    img/index/phone-2@2x.webp 2x
+                  "
                   width="186"
                   height="382"
                   alt="Скриншот с фильтром."
@@ -182,7 +221,11 @@
                 <img
                   class="information__phone"
                   src="img/index/phone-3.png"
-                  srcset="img/index/phone-3@2x.png 2x"
+                  srcset="
+                    img/index/phone-3@2x.png  2x,
+                    img/index/phone-3.webp    1x,
+                    img/index/phone-3@2x.webp 2x
+                  "
                   width="186"
                   height="382"
                   alt="Скриншот с смайликом."
@@ -197,7 +240,11 @@
                 <img
                   class="information__mobile-phone"
                   src="img/index/mobile-phone.png"
-                  srcset="img/index/mobile-phone@2x.png 2x"
+                  srcset="
+                    img/index/mobile-phone@2x.png  2x,
+                    img/index/mobile-phone.webp    1x,
+                    img/index/mobile-phone@2x.webp 2x
+                  "
                   width="157"
                   height="320"
                   alt="Телефон."
@@ -534,6 +581,6 @@
     </footer>
     <!-- Footer  -->
 
-    <script src="js/script-navigation.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
