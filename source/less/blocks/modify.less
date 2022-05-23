@@ -105,10 +105,12 @@
 
 .modify__upload {
   color: #d22856;
-  width: 280px;
+  width: 100%;
   border-color: rgba(210, 40, 86, 1);
   margin-bottom: 12px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover {
     background-color: #d22856;
@@ -133,9 +135,11 @@
 
 .modify__cancel {
   color: rgba(40, 54, 69, 0.1);
-  width: 280px;
+  width: 100%;
   border-color: rgba(40, 54, 69, 0.1);
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover {
     border-color: rgba(40, 54, 69, 0.3);
@@ -185,7 +189,7 @@
   z-index: 1;
   background-color: rgba(40, 54, 69, 0.1);
   width: 100vw;
-  left: calc(((100vw - 280px) / 2) * -1);
+  left: calc(((100vw - 100%) / 2) * -1);
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -243,11 +247,31 @@
   }
 
   @media (min-width: @tablet-width) {
-    left: 160px;
+    &--crop {
+      left: 160px;
+    }
+
+    &--colour {
+      left: 30px;
+    }
+
+    &--contrast {
+      left: 100px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    left: 234px;
+    &--crop {
+      left: 234px;
+    }
+
+    &--colour {
+      left: 40px;
+    }
+
+    &--contrast {
+      left: 150px;
+    }
   }
 }
 
@@ -262,6 +286,8 @@
 .modify__picture {
   display: block;
   margin-bottom: 42px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: @tablet-width) {
     width: 300px;
