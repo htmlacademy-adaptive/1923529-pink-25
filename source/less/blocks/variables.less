@@ -1,18 +1,18 @@
 @tablet-width: 660px;
-@desktop-width: 1200px;
+@desktop-width: 980px;
 
 .container {
-  width: 320px;
+  max-width: 659px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  max-width: 980px;
 
   @media (min-width: @tablet-width) {
-    width: 660px;
+    max-width: 979px;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: none;
     width: 980px;
   }
 }
