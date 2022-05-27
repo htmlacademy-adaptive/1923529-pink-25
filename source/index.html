@@ -24,18 +24,21 @@
     <link
       rel="preload"
       href="fonts/opensans.woff2"
+      as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
       href="fonts/opensansbold.woff2"
+      as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
       href="fonts/opensanslight.woff2"
+      as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
@@ -45,7 +48,7 @@
     <h1 class="visually-hidden">PINK.</h1>
 
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header main-header--nojs">
       <div class="container">
         <div class="main-header__wrapper">
           <a class="main-header__link main-header__link--current">
@@ -58,7 +61,6 @@
               height="23"
             >
               <use href="img/sprite/sprite.svg#pink-mobile"></use>
-              >
             </svg>
             <svg
               class="main-header__icon main-header__icon--tablet"
@@ -79,13 +81,13 @@
               <use href="img/sprite/sprite.svg#pink-desktop"></use>
             </svg>
           </a>
-          <nav class="navigation navigation--closed navigation--nojs">
+          <nav class="navigation navigation--nojs navigation--closed">
             <h2 class="visually-hidden">Меню.</h2>
             <button class="navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню.</span>
             </button>
             <ul class="navigation__list">
-              <li class="navigation__item navigation__item--current">
+              <li class="navigation__item navigation__item--disabled">
                 <a class="navigation__link navigation__link--current"
                   >Главная</a
                 >
@@ -120,6 +122,7 @@
               class="intro__phone"
               src="img/index/intro-phone.png"
               srcset="
+                img/index/intro-phone.png     1x,
                 img/index/intro-phone@2x.png  2x,
                 img/index/intro-phone.webp    1x,
                 img/index/intro-phone@2x.webp 2x
@@ -170,6 +173,7 @@
               class="information__tablet-phone"
               src="img/index/tablet-phone.png"
               srcset="
+                img/index/tablet-phone.png     1x,
                 img/index/tablet-phone@2x.png  2x,
                 img/index/tablet-phone.webp    1x,
                 img/index/tablet-phone@2x.webp 2x
@@ -261,16 +265,11 @@
         <div class="container day__inner">
           <h2 class="day__title">24</h2>
           <div class="day__wrapper">
-            <b class="day__subtitle"
-              >Эффект <br />
-              на 24 часа!</b
-            >
+            <b class="day__subtitle">Эффект на&nbsp;24 часа!</b>
             <p class="day__description">
               Британские ученые провели исследования и&nbsp;доказали,
               что&nbsp;положительный эффект от&nbsp;использования приложения
-              длится
-              <br />
-              целые сутки!
+              длится целые&nbsp;сутки!
             </p>
             <a class="day__link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -282,10 +281,10 @@
       <section class="reviews">
         <div class="container reviews__slider">
           <h2 class="visually-hidden">Отзывы.</h2>
-          <div class="slider__controls">
-            <button class="slider__button" type="button">
+          <div class="reviews__slider-controls">
+            <button class="reviews__slider-button" type="button">
               <svg
-                class="slider__arrow slider__arrow--prev"
+                class="reviews__slider-arrow reviews__slider-arrow--prev"
                 aria-hidden="true"
                 focusable="false"
                 width="22"
@@ -295,9 +294,9 @@
               </svg>
               <span class="visually-hidden">Предыдущий слайд.</span>
             </button>
-            <button class="slider__button" type="button">
+            <button class="reviews__slider-button" type="button">
               <svg
-                class="slider__arrow slider__arrow--next"
+                class="reviews__slider-arrow reviews__slider-arrow--next"
                 aria-hidden="true"
                 focusable="false"
                 width="22"
@@ -308,8 +307,8 @@
               <span class="visually-hidden">Следующий слайд.</span>
             </button>
           </div>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
+          <ul class="reviews__list">
+            <li class="reviews__item">
               <h3 class="reviews__author">Николай Петров</h3>
               <span class="reviews__info">25 лет, водитель трамвая</span>
               <blockquote class="reviews__text">
@@ -318,7 +317,7 @@
                 будущей женой в комментариях к выложенной фотографии!»
               </blockquote>
             </li>
-            <li class="reviews__item slider__item slider__invisible">
+            <li class="reviews__item reviews__slider-invisible">
               <h3 class="reviews__author">Николай Петров</h3>
               <span class="reviews__info">25 лет, водитель трамвая</span>
               <blockquote class="reviews__text">
@@ -327,7 +326,7 @@
                 будущей женой в комментариях к выложенной фотографии!»
               </blockquote>
             </li>
-            <li class="reviews__item slider__item slider__invisible">
+            <li class="reviews__item reviews__slider-invisible">
               <h3 class="reviews__author">Николай Петров</h3>
               <span class="reviews__info">25 лет, водитель трамвая</span>
               <blockquote class="reviews__text">
@@ -337,13 +336,13 @@
               </blockquote>
             </li>
           </ul>
-          <div class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles">
             <button
-              class="slider__toggle slider__toggle--current"
+              class="reviews__toggle reviews__toggle--current"
               type="button"
             ></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="reviews__toggle" type="button"></button>
+            <button class="reviews__toggle" type="button"></button>
           </div>
         </div>
       </section>
@@ -353,72 +352,72 @@
       <section class="price">
         <div class="container price__slider">
           <h2 class="visually-hidden">Тарифы.</h2>
-          <ul class="price__list slider__list">
-            <li class="price__item slider__item slider__invisible card">
+          <ul class="price__list">
+            <li class="price__item price__slider-invisible card">
               <table class="card__list">
                 <tr class="card__item">
                   <th class="card__title card__base">
                     База<span class="card__price">1,99 USD</span>
                   </th>
                 </tr>
-                <tr class="card__item card__item--check">
+                <tr class="card__item card__check">
                   <td class="card__subtitle card__filter">Розовый фильтр</td>
                 </tr>
-                <tr class="card__item card__item--no-check">
+                <tr class="card__item card__no-check">
                   <td class="card__subtitle card__smile">Смайлики</td>
                 </tr>
-                <tr class="card__item card__item--no-check">
+                <tr class="card__item card__no-check">
                   <td class="card__subtitle card__comment">Комментарии</td>
                 </tr>
               </table>
             </li>
-            <li class="price__item slider__item card">
+            <li class="price__item card">
               <table class="card__list">
                 <tr class="card__item">
                   <th class="card__title card__standart">
                     Стандарт<span class="card__price">3,99 USD</span>
                   </th>
                 </tr>
-                <tr class="card__item card__item--check">
+                <tr class="card__item card__check">
                   <td class="card__subtitle card__filter">Розовый фильтр</td>
                 </tr>
-                <tr class="card__item card__item--check">
+                <tr class="card__item card__check">
                   <td class="card__subtitle card__smile">Смайлики</td>
                 </tr>
-                <tr class="card__item card__item--no-check">
+                <tr class="card__item card__no-check">
                   <td class="card__subtitle card__comment">Комментарии</td>
                 </tr>
               </table>
             </li>
-            <li class="price__item slider__item slider__invisible card">
+            <li class="price__item price__slider-invisible card">
               <table class="card__list">
                 <tr class="card__item">
                   <th class="card__title card__anlim">
                     Анлим<span class="card__price">9,99 USD</span>
                   </th>
                 </tr>
-                <tr class="card__item card__item--check">
+                <tr class="card__item card__check">
                   <td class="card__subtitle card__filter">Розовый фильтр</td>
                 </tr>
-                <tr class="card__item card__item--check">
+                <tr class="card__item card__check">
                   <td class="card__subtitle card__smile">Смайлики</td>
                 </tr>
-                <tr class="card__item card__item--check">
+                <tr class="card__item card__check">
                   <td class="card__subtitle card__comment">Комментарии</td>
                 </tr>
               </table>
             </li>
           </ul>
-          <div class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
+          <div class="price__toggles">
+            <button class="price__toggle" type="button"></button>
             <button
-              class="slider__toggle slider__toggle--current"
+              class="price__toggle price__toggle--current"
               type="button"
             ></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="price__toggle" type="button"></button>
           </div>
         </div>
-        <table class="price__table container">
+        <table class="price__table container card">
           <tr class="card__item">
             <th class="card__empty"></th>
             <th class="card__title card__base">
@@ -433,21 +432,21 @@
           </tr>
           <tr class="card__item">
             <td class="card__subtitle card__filter">Розовый фильтр</td>
-            <td class="card__cell card__border card__item--check"></td>
-            <td class="card__cell card__border card__item--check"></td>
-            <td class="card__cell card__border card__item--check"></td>
+            <td class="card__cell card__border card__check"></td>
+            <td class="card__cell card__border card__check"></td>
+            <td class="card__cell card__border card__check"></td>
           </tr>
           <tr class="card__item">
             <td class="card__subtitle card__smile">Смайлики</td>
-            <td class="card__cell card__item--no-check"></td>
-            <td class="card__cell card__item--check"></td>
-            <td class="card__cell card__item--check"></td>
+            <td class="card__cell card__no-check"></td>
+            <td class="card__cell card__check"></td>
+            <td class="card__cell card__check"></td>
           </tr>
           <tr class="card__item">
             <td class="card__subtitle card__comment">Комментарии</td>
-            <td class="card__cell card__item--no-check"></td>
-            <td class="card__cell card__item--no-check"></td>
-            <td class="card__cell card__item--check"></td>
+            <td class="card__cell card__no-check"></td>
+            <td class="card__cell card__no-check"></td>
+            <td class="card__cell card__check"></td>
           </tr>
         </table>
       </section>
