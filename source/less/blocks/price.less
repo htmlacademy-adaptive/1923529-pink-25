@@ -46,6 +46,10 @@
     border-spacing: 0;
     border-collapse: collapse;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 980px;
+  }
 }
 
 .price__slider {
@@ -72,4 +76,35 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.price__toggle {
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, 0.3);
+  cursor: pointer;
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--current {
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    pointer-events: none;
+  }
+}
+
+.price__slider-invisible {
+  display: none;
 }

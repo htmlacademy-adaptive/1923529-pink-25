@@ -3,6 +3,7 @@
   color: #000000;
   padding-bottom: 26px;
   margin-bottom: 18px;
+  position: relative;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -18,7 +19,7 @@
 
     &:first-of-type {
       padding-bottom: 5px;
-      margin-bottom: 30px;
+      margin-bottom: 33px;
       min-height: 0;
     }
   }
@@ -27,7 +28,7 @@
     min-height: 555px;
 
     &:first-of-type {
-      margin-bottom: 0;
+      margin-bottom: 1px;
       min-height: 0;
     }
   }
@@ -49,11 +50,6 @@
   @media (min-width: @tablet-width) {
     margin-left: 30px;
     margin-top: 28px;
-
-    &--panorama {
-      order: -2;
-      margin-bottom: 4px;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -89,10 +85,6 @@
     margin-bottom: 19px;
     margin-left: 30px;
     margin-right: 10px;
-
-    & br {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -126,22 +118,10 @@
     padding-left: 0;
     margin-right: 30px;
     background-position: right;
-
-    &--panorama {
-      order: -1;
-      margin-left: auto;
-      padding-right: 29px;
-      margin-top: -13px;
-      margin-bottom: 3px;
-    }
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 28px;
-
-    &--panorama {
-      margin-left: auto;
-    }
   }
 }
 
@@ -151,7 +131,6 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     height: 300px;
   }
 
@@ -159,4 +138,47 @@
     width: 300px;
     height: 400px;
   }
+}
+
+.comment:first-of-type .comment__picture {
+  width: 100vw;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 506px;
+    max-width: 1200px;
+    margin-left: -130px;
+    margin-right: -130px;
+  }
+}
+
+.comment:first-of-type .comment__link {
+  order: -2;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.comment:first-of-type .comment__like {
+  @media (min-width: @tablet-width) {
+    order: -1;
+    margin-left: auto;
+    padding-right: 29px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.comment:first-of-type .comment__author {
+  margin-top: -10px;
 }
